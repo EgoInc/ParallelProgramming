@@ -23,7 +23,7 @@ double** initMatrix(size_t n, MatrixType type = RANDOM) {
         for (int j = 0; j < n; j++) {
             switch (type) {
             case RANDOM:
-                m[i][j] = (double)(rand() % 100);
+                m[i][j] = (double)(rand() % 10);
                 break;
             case IDENTITY:
                 m[i][j] = (i == j) ? 1 : 0;
@@ -112,7 +112,7 @@ double** inverseMatrixOpenMP(double** m, size_t n, int threadsNum = 8) {
 
 void InverseMatrix(double** inputMatrix, int matrix_size) {
     
-    for (int threads = 2; threads <= 32; threads = threads * 2) {
+    for (int threads = 2; threads <= 8; threads = threads * 2) {
         double** T = copyMatrix(inputMatrix, matrix_size);
 
         double timerOpenMp;
@@ -178,6 +178,10 @@ int main(int argc) {
     InputMatrix = createMatrix(2000);
     InverseMatrix(InputMatrix, 2000);
     
+
+    cout << "\n_____________________Test 5_________________________\n";
+    InputMatrix = createMatrix(4000);
+    InverseMatrix(InputMatrix, 4000);
     
     return 0;
 }

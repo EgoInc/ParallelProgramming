@@ -1,1 +1,2 @@
 C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Task1\x64\Debug\Task1.exe
+C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Laboratornay\x64\Debug\Task1.exe

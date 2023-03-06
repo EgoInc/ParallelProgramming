@@ -1,3 +1,4 @@
 ﻿  Source1.cpp
-C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Task1\Source1.cpp(73,9): warning C4101: 'i': unreferenced local variable
-  Task1.vcxproj -> C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Task1\x64\Debug\Task1.exe
+C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Laboratornay\Source1.cpp(73,9): warning C4101: 'i': unreferenced local variable
+C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Laboratornay\Source1.cpp(69): warning C4101: 'i': unreferenced local variable
+  Task1.vcxproj -> C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Laboratornay\x64\Debug\Task1.exe
