@@ -132,6 +132,13 @@ void InverseMatrix(double** inputMatrix, int matrix_size) {
                 printMatrix(N, matrix_size);
             }
             cout << "OpenMP execution time: " << timerOpenMp << endl;
+
+            for (int i = 0; i < matrix_size; ++i) {
+                delete[] N[i];
+                delete[] T[i];
+            }
+            delete[] N;
+            delete[] T;
         }
         catch (errorCode err) {
             if (err == ZERO_DET) {
@@ -154,34 +161,38 @@ int main(int argc) {
 
     cout << "Task 10\n";
     cout << "Construction of the inverse matrix\n";
-    
+    int matrix_size = 3;
     cout << "\n________________________________Test 1_________________________________\n";
-    double** InputMatrix = createMatrix(3);
+    double** InputMatrix = createMatrix(matrix_size);
     cout << "Let's start with 5x5 matrix\n";
-        InverseMatrix(InputMatrix, 3);
-    
+    InverseMatrix(InputMatrix, matrix_size);
+    /*
     cout << "\n_____________________Test 3_________________________\n";
     cout << "Matrices of size larger than 15 are not output to the table, but let's check the 500x500 matrix\n";
     cout << "=======500x500 \n";
-     InputMatrix = createMatrix(500);
-    InverseMatrix(InputMatrix, 500);
+     matrix_size = 500;
+     InputMatrix = createMatrix(matrix_size);
+    InverseMatrix(InputMatrix, matrix_size);
    
 
   
     cout << "\n_____________________Test 4_________________________\n";
     cout << "=======1000x1000 \n";
-    InputMatrix = createMatrix(1000);
-    InverseMatrix(InputMatrix, 1000);
+    matrix_size = 1000;
+     InputMatrix = createMatrix(matrix_size);
+    InverseMatrix(InputMatrix, matrix_size);
     
 
     cout << "\n_____________________Test 5_________________________\n";
-    InputMatrix = createMatrix(2000);
-    InverseMatrix(InputMatrix, 2000);
+    matrix_size = 2000;
+     InputMatrix = createMatrix(matrix_size);
+    InverseMatrix(InputMatrix, matrix_size);
     
+    */
+        for (int i = 0; i < matrix_size; ++i) {
+            delete[] InputMatrix[i];
+        }
+        delete[] InputMatrix;
 
-    cout << "\n_____________________Test 5_________________________\n";
-    InputMatrix = createMatrix(4000);
-    InverseMatrix(InputMatrix, 4000);
-    
     return 0;
 }
