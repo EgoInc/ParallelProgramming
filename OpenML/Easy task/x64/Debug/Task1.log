@@ -1,3 +1,7 @@
 ﻿  Source.cpp
-C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Easy task\Source.cpp(61,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Easy task\Source.cpp(38,49): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Easy task\Source.cpp(50,49): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Easy task\Source.cpp(62,49): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Easy task\Source.cpp(74,49): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Easy task\Source.cpp(193,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
   Task1.vcxproj -> C:\Users\User\Desktop\Учеба\Многопоточка\OpenML\Easy task\x64\Debug\Task1.exe
